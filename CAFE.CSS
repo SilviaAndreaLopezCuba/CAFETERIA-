@@ -1,0 +1,36 @@
+ body {
+            padding-top: 56px; /* Para el navbar fijo */
+        }
+        
+        .carousel-item {
+            height: 600px;
+        }
+        
+        .carousel-item img {
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .carousel-caption {
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            padding: 20px;
+        }
+        
+        .bg-cafe {
+            background-color: #8B4513 !important;
+        }
+        
+        .text-cafe {
+            color: #8B4513 !important;
+        }
+        
+        .card-img-top {
+            height: 250px;
+            object-fit: cover;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+            transition: transform 0.3s ease;
+        }
