@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="es" data-bs-theme="auto">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAFE AROMA</title>
+    
+    <!-- 1. BOOTSTRAP CSS (primero) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- 2. Bootstrap Icons (opcional) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <!-- 3. TU CSS PERSONALIZADO (después de Bootstrap) -->
+    <link rel="stylesheet" href="..//CAFETERIA PROYECTO/CAFE.CSS">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="img/coffee.png" type="image/x-icon">
+</head>
+    
+
+</head>
+<body>
+    <!-- NAVBAR Bootstrap -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-cafe fixed-top">
+        <div class="container">
+            <!-- Logo + Nombre -->
+            <a class="navbar-brand fw-bold" href="#">
+                <i class="bi bi-cup-hot-fill me-2"></i>
+                CAFE AROMA
+            </a>
+            
+            <!-- Botón hamburguesa -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Contenido del navbar -->
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">INICIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">MENU</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">RESERVAS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">GALERÍA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CONTACTO</a>
+                    </li>
+                </ul>
+                
+                <!-- Buscador Bootstrap -->
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar...">
+                    <button class="btn btn-outline-light" type="submit">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CARRUSEL Bootstrap -->
+    <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2"></button>
+        </div>
+        
+        <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+                <img src="img_11270dc8d2afedcf6f89e249534ce432.jpg" class="d-block w-100" alt="Café Aroma">
+                <div class="carousel-caption text-start">
+                    <h2 class="display-4">Bienvenido a Café Aroma</h2>
+                    <p class="lead">El mejor café de la ciudad</p>
+                    <a href="#" class="btn btn-warning btn-lg">
+                        <i class="bi bi-cup-hot me-2"></i>Ver Menú
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" 
+                     class="d-block w-100" alt="Postres">
+                <div class="carousel-caption">
+                    <h2 class="display-4">Postres Artesanales</h2>
+                    <p class="lead">Elaborados diariamente con ingredientes frescos</p>
+                    <a href="#" class="btn btn-danger btn-lg">
+                        <i class="bi bi-cake2 me-2"></i>Descubrir Postres
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" 
+                     class="d-block w-100" alt="Ambiente">
+                <div class="carousel-caption text-end">
+                    <h2 class="display-4">Nuestro Espacio</h2>
+                    <p class="lead">Ambiente acogedor para disfrutar</p>
+                    <a href="#" class="btn btn-success btn-lg">
+                        <i class="bi bi-calendar-check me-2"></i>Reservar Mesa
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Controles del carrusel -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <!-- SECCIÓN PRODUCTOS DESTACADOS - Bootstrap Grid -->
+    <section class="container py-5">
+        <div class="text-center mb-5">
+            <h2 class="display-5 fw-bold text-cafe">
+                <i class="bi bi-stars me-2"></i>Productos Destacados
+            </h2>
+            <p class="lead text-muted">Lo más pedido por nuestros clientes</p>
+        </div>
+        
+        <div class="row g-4">
+            <!-- Producto 1 -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm product-card">
+                    <img src="https://images.unsplash.com/photo-1498804103079-a6351b050096?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                         class="card-img-top" alt="Café Especial">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-start mb-3">
+                            <h5 class="card-title fw-bold text-cafe">Café Especial Aroma</h5>
+                            <span class="badge bg-danger">MÁS VENDIDO</span>
+                        </div>
+                        <p class="card-text">
+                            Granos arábica tostados artesanalmente con notas de chocolate.
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center mt-4">
+                            <h4 class="text-success mb-0">250.000 Gs</h4>
+                            <a href="#" class="btn btn-warning">
+                                <i class="bi bi-cart-plus me-2"></i>Ordenar
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-transparent">
+                        <div class="text-warning">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                            <span class="text-muted ms-2">4.5 (128)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Producto 2 -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm product-card">
+                    <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                         class="card-img-top" alt="Postre Chef">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-start mb-3">
+                            <h5 class="card-title fw-bold text-cafe">Postre del Chef</h5>
+                            <span class="badge bg-success">NUEVO</span>
+                        </div>
+                        <p class="card-text">
+                            Creación exclusiva diaria con ingredientes frescos de temporada.
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center mt-4">
+                            <h4 class="text-success mb-0">15.000 Gs</h4>
+                            <a href="#" class="btn btn-warning">
+                                <i class="bi bi-cart-plus me-2"></i>Ordenar
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-transparent">
+                        <div class="text-warning">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <span class="text-muted ms-2">5.0 (96)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Producto 3 -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm product-card">
+                    <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                         class="card-img-top" alt="Combo Especial">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-start mb-3">
+                            <h5 class="card-title fw-bold text-cafe">Combo Aroma</h5>
+                            <span class="badge bg-info text-dark">OFERTA</span>
+                        </div>
+                        <p class="card-text">
+                            Café + postre a elección. Ahorra 15% con este combo especial.
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center mt-4">
+                            <div>
+                                <h4 class="text-success mb-0">15.000 Gs</h4>
+                                <small class="text-danger"><del>25.000 Gs</del></small>
+                            </div>
+                            <a href="#" class="btn btn-warning">
+                                <i class="bi bi-cart-plus me-2"></i>Ordenar
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-transparent">
+                        <div class="text-warning">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star"></i>
+                            <span class="text-muted ms-2">4.0 (204)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BOTÓN RESERVAR - Bootstrap Button -->
+    <section class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="text-center p-5 rounded-4 bg-cafe text-white">
+                    <h2 class="display-5 fw-bold mb-4">
+                        <i class="bi bi-calendar-check me-2"></i>¿Listo para visitarnos?
+                    </h2>
+                    <p class="lead mb-4">
+                        Reserva tu mesa ahora y asegura tu lugar en Café Aroma
+                    </p>
+                    <div class="d-flex flex-wrap justify-content-center gap-3">
+                        <a href="#" class="btn btn-warning btn-lg px-5">
+                            <i class="bi bi-clock-history me-2"></i>RESERVAR AHORA
+                        </a>
+                        <a href="tel:+595981234567" class="btn btn-outline-light btn-lg">
+                            <i class="bi bi-telephone me-2"></i>LLAMAR
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER - Bootstrap Grid -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="fw-bold mb-3">
+                        <i class="bi bi-cup-hot text-warning me-2"></i>
+                        CAFE AROMA
+                    </h5>
+                    <p class="text-white-50">
+                        El mejor café de la ciudad desde 2010.
+                    </p>
+                    <div class="mt-3">
+                        <a href="#" class="text-white me-3">
+                            <i class="bi bi-facebook fs-5"></i>
+                        </a>
+                        <a href="#" class="text-white me-3">
+                            <i class="bi bi-instagram fs-5"></i>
+                        </a>
+                        <a href="#" class="text-white me-3">
+                            <i class="bi bi-twitter fs-5"></i>
+                        </a>
+                        <a href="#" class="text-white">
+                            <i class="bi bi-whatsapp fs-5"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="fw-bold mb-3">Horarios</h5>
+                    <ul class="list-unstyled text-white-50">
+                        <li class="mb-2">
+                            <i class="bi bi-clock text-warning me-2"></i>
+                            Lunes a Viernes: 8:00 - 20:00
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-clock text-warning me-2"></i>
+                            Sábados: 9:00 - 22:00
+                        </li>
+                        <li>
+                            <i class="bi bi-clock text-warning me-2"></i>
+                            Domingos: 10:00 - 18:00
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="col-md-4">
+                    <h5 class="fw-bold mb-3">Contacto</h5>
+                    <ul class="list-unstyled text-white-50">
+                        <li class="mb-2">
+                            <i class="bi bi-geo-alt text-warning me-2"></i>
+                            Pasaje Yegros, Asuncion
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-telephone text-warning me-2"></i>
+                            (595) 982-990-062
+                        </li>
+                        <li>
+                            <i class="bi bi-envelope text-warning me-2"></i>
+                            lopezcubasilviaandrea@gmail.com
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <hr class="text-white-50 my-4">
+            
+            <div class="text-center text-white-50">
+                <p class="mb-0">© 2024 Café Aroma. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        // Inicializar componentes Bootstrap
+        document.addEventListener('DOMContentLoaded', function() {
+            // Inicializar carrusel
+            var myCarousel = document.getElementById('mainCarousel');
+            var carousel = new bootstrap.Carousel(myCarousel);
+        });
+    </script>
+</body>
+</html>
